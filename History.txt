@@ -1,0 +1,4 @@
+2008-03-28
+  * Added model_update_tracker
+  * Added example rails applicaion in branch example
+
