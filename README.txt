@@ -46,7 +46,7 @@ tracker that provide functionality for updates, deletes, and no_difference asser
 
 == INSTALL:
 
-git clone git://github.com/stuarthalloway/obsidian.git
+git clone git://github.com/relevance/obsidian.git
 rake gem
 sudo gem install pkg/#{pkg_name}
 
