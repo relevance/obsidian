@@ -2,9 +2,22 @@ require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'hoe'
+require 'lib/obsidian'
 
 desc 'Default: run unit tests.'
 task :default => :test
+
+Hoe.new('obsidian', Obsidian::VERSION) do |p|
+  p.rubyforge_name = "thinkrelevance"
+  p.description = "It's metastable"
+  p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
+  p.name = 'obsidian'
+  p.summary = "It's metastable"
+  p.author = "Relevance"
+  p.email = "opensource@thinkrelevance.com"
+  p.url = "http://opensource.thinkrelevance.com"
+end
 
 desc 'Test obsidian.'
 Rake::TestTask.new(:test) do |t|
