@@ -1,17 +1,14 @@
 = Obsidian
 
-* Log bugs/issues/suggestions here: http://opensource.thinkrelevance.com/wiki/obsidian
-* Source: http://github.com/relevance/obsidian/tree/master
-* git clone git://github.com/relevance/obsidian.git
-* rdocs: Coming Soon
-
-== DESCRIPTION:
+== DESCRIPTION
 
 Obsidian. It's metastable. 
 
-Chunks of Ruby code we have found helpful.
+In the tangible world, obsidian is a naturally-occurring glass that is metastable at the earth's surface.  It's commonly found within the margins of rhyolitic lava flows, where cooling of the lava is rapid. [1] In the slightly less tangible world of programming, <b>Obsidian</b> is home to chunks of Ruby code that we've found helpful.  These bits of code are often found at the bottom of a mountain of yak hair, the occasionally-occurring product of simplifying various tasks.
 
-== FEATURES/PROBLEMS:
+  1 http://en.wikipedia.org/wiki/Obsidian
+
+== FEATURES
 
 === Model Update Tracker
 This library allows you to functionally test updates to models with clearer and more focused intent.
@@ -48,8 +45,40 @@ tracker that provide functionality for updates, deletes, and no_difference asser
 * assert_no_models_destroyed
 * assert_no_models_updated
 
-== INSTALL:
+== INSTALL
 
-git clone git://github.com/relevance/obsidian.git
-rake gem
-sudo gem install pkg/#{pkg_name}
+  git clone git://github.com/relevance/obsidian.git
+  rake gem
+  sudo gem install pkg/#{pkg_name}
+
+== URLS
+
+* Log bugs, issues, and suggestions on Trac: http://opensource.thinkrelevance.com/wiki/obsidian
+* View Source: http://github.com/relevance/obsidian/tree/master
+* Git clone Source: git://github.com/relevance/obsidian.git
+* RDocs: http://thinkrelevance.rubyforge.org/obsidian/
+
+== LICENSE
+
+(The MIT License)
+
+Copyright (c) 2008 Relevance, Inc. - http://thinkrelevance.com
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
