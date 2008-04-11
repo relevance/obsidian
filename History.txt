@@ -1,3 +1,6 @@
+2008-04-11
+  * Updated documentation in README
+
 2008-03-28
   * Added model_update_tracker
   * Added example rails applicaion in branch example

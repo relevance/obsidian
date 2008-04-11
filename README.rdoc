@@ -28,7 +28,8 @@ Is it okay if the code block also persists a Location record? An AssetOwner reco
 Chances are that the developer knows the answer to this question, but the test fails to capture that
 knowledge. Side effects matter, and our tests should adequately validate that the desired side effects
 (and <i>only</i> the desired side effects) are taking place. In the example below, assert_models_created
-allows us to validate that an Asset is created <i>and</i> that no other objects are inadvertently persisted.
+allows us to validate that an Asset is created <i>and</i> that no other objects are inadvertently
+persisted.
 
   assert_models_created(Asset) do
     post :create, :asset => {}
