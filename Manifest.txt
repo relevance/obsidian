@@ -2,8 +2,10 @@ History.txt
 LICENSE
 Manifest.txt
 README.rdoc
+README.txt
 Rakefile
 lib/obsidian.rb
+lib/obsidian/rails/helper_test.rb
 lib/obsidian/rails/model_update_tracker.rb
 lib/obsidian/spec.rb
 lib/obsidian/spec/map_spec_helper.rb
