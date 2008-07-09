@@ -10,6 +10,7 @@ lib/obsidian/rails/model_update_tracker.rb
 lib/obsidian/spec.rb
 lib/obsidian/spec/map_spec_helper.rb
 lib/obsidian/spec/set_spec_helper.rb
+obsidian.gemspec
 test/obsidian_test.rb
 test/test_helper.rb
 test/units/obsidian/rails/model_update_tracker_test.rb
