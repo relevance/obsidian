@@ -1,3 +1,6 @@
+HEAD
+  * Added meta extensions from Why
+  
 2008-04-11
   * Updated documentation in README
 
