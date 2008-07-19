@@ -72,3 +72,4 @@ rescue LoadError
     puts 'sudo gem install rcov # if you want the rcov tasks'
   end
 end
+ 
