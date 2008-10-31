@@ -1,4 +1,3 @@
-(in /Users/rsanheim/src/relevance/obsidian)
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
