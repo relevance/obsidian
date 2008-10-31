@@ -5,6 +5,8 @@ README.rdoc
 README.txt
 Rakefile
 lib/obsidian.rb
+lib/obsidian/extensions/object.rb
+lib/obsidian/extensions/try.rb
 lib/obsidian/rails/helper_test.rb
 lib/obsidian/rails/model_update_tracker.rb
 lib/obsidian/spec.rb
@@ -13,7 +15,9 @@ lib/obsidian/spec/set_spec_helper.rb
 obsidian.gemspec
 test/obsidian_test.rb
 test/test_helper.rb
+test/units/obsidian/object_extensions_test.rb
 test/units/obsidian/rails/model_update_tracker_test.rb
 test/units/obsidian/spec/map_spec_helper_test.rb
 test/units/obsidian/spec/set_spec_helper_test.rb
 test/units/obsidian/spec_test.rb
+test/units/obsidian/try_test.rb
