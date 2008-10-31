@@ -5,9 +5,6 @@ require 'rake/rdoctask'
 require 'hoe'
 require 'lib/obsidian'
 
-desc 'Default: run unit tests.'
-task :default => :test
-
 hoe = Hoe.new('obsidian', Obsidian::VERSION) do |p|
   p.rubyforge_name = "thinkrelevance"
   p.description = "It's metastable"
@@ -33,13 +30,6 @@ Rake::RDocTask.new(:docs) do |rd|
 
   title = "#{hoe.name}-#{hoe.version} Documentation"
   title = "#{hoe.rubyforge_name}'s " + title if hoe.rubyforge_name != hoe.name
-end
-
-desc 'Test obsidian.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = true
 end
 
 begin
