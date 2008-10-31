@@ -11,4 +11,3 @@ require 'mocha'
 require 'ostruct'
 require 'activerecord'
 require 'obsidian'
-

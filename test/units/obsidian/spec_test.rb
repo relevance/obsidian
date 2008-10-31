@@ -26,7 +26,7 @@ describe "Obsidian::Spec find_calling_line" do
   it "can parse a stack trace to find the caller of a method" do  
     file, line_no = nest_1("nest_1")   
     file.should.match %r{spec_test.rb$} 
-    line_no.should.match /^\d+$/
+    line_no.should.match(/^\d+$/)
   end
   it "returns nil if a method does not exist" do  
     file, line_no = nest_1("not_a_real_method_name")
@@ -43,7 +43,7 @@ describe "Obsidian::Spec read_calling_line" do
     nest_2(name)
   end  
   it "can parse a stack trace to find the caller of a method" do  
-    nest_1("nest_1").should.match /nest_1\("nest_1"\)/
+    nest_1("nest_1").should.match(/nest_1\("nest_1"\)/)
   end
   it "returns nil if a method does not exist" do  
     nest_1("not_a_real_method_name").should.be nil

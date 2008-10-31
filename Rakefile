@@ -15,6 +15,7 @@ hoe = Hoe.new('obsidian', Obsidian::VERSION) do |p|
   p.email = "opensource@thinkrelevance.com"
   p.url = "http://opensource.thinkrelevance.com"  
   p.rdoc_pattern = /^(lib|bin|ext)|txt|rdoc$/
+  p.test_globs = "test/**/*_test.rb"
 end
 
 # Override RDoc to use allison template, and also use our .rdoc README as the main page instead of the default README.txt

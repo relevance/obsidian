@@ -1,4 +1,5 @@
-HEAD
+2008-10-30
+  * Added Object#try
   * Added meta extensions from Why
   
 2008-04-11
