@@ -1,6 +1,3 @@
-(in /Users/rsanheim/src/relevance/public/obsidian)
-# -*- encoding: utf-8 -*-
-
 Gem::Specification.new do |s|
   s.name = %q{obsidian}
   s.version = "0.0.6"
