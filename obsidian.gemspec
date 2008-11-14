@@ -7,11 +7,11 @@ Gem::Specification.new do |s|
   s.date = %q{2008-11-13}
   s.description = %q{It's metastable}
   s.email = %q{opensource@thinkrelevance.com}
-  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  s.files = ["History.txt", "LICENSE", "Manifest.txt", "README.rdoc", "README.txt", "Rakefile", "lib/obsidian.rb", "lib/obsidian/extensions/object.rb", "lib/obsidian/extensions/try.rb", "lib/obsidian/rails/helper_test.rb", "lib/obsidian/rails/model_update_tracker.rb", "lib/obsidian/spec.rb", "lib/obsidian/spec/map_spec_helper.rb", "lib/obsidian/spec/set_spec_helper.rb", "obsidian.gemspec", "test/obsidian_test.rb", "test/test_helper.rb", "test/units/obsidian/object_extensions_test.rb", "test/units/obsidian/rails/model_update_tracker_test.rb", "test/units/obsidian/spec/map_spec_helper_test.rb", "test/units/obsidian/spec/set_spec_helper_test.rb", "test/units/obsidian/spec_test.rb", "test/units/obsidian/try_test.rb"]
+  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
+  s.files = ["History.txt", "LICENSE", "Manifest.txt", "README.rdoc", "Rakefile", "lib/obsidian.rb", "lib/obsidian/extensions/object.rb", "lib/obsidian/extensions/try.rb", "lib/obsidian/rails/helper_test.rb", "lib/obsidian/rails/model_update_tracker.rb", "lib/obsidian/spec.rb", "lib/obsidian/spec/map_spec_helper.rb", "lib/obsidian/spec/set_spec_helper.rb", "obsidian.gemspec", "test/obsidian_test.rb", "test/test_helper.rb", "test/units/obsidian/object_extensions_test.rb", "test/units/obsidian/rails/model_update_tracker_test.rb", "test/units/obsidian/spec/map_spec_helper_test.rb", "test/units/obsidian/spec/set_spec_helper_test.rb", "test/units/obsidian/spec_test.rb", "test/units/obsidian/try_test.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://opensource.thinkrelevance.com}
-  s.rdoc_options = ["--main", "README.txt"]
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{thinkrelevance}
   s.rubygems_version = %q{1.3.1}

@@ -2,36 +2,24 @@ require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
-require 'hoe'
+require 'echoe'
 require 'lib/obsidian'
 
-hoe = Hoe.new('obsidian', Obsidian::VERSION) do |p|
+echoe = Echoe.new('obsidian', Obsidian::VERSION) do |p|
   p.rubyforge_name = "thinkrelevance"
-  p.description = "It's metastable"
-  p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
-  p.name = 'obsidian'
-  p.summary = "It's metastable"
   p.author = "Relevance"
   p.email = "opensource@thinkrelevance.com"
+  p.summary = "It's metastable"
+  p.description = "Bits of Ruby code we've found helpful for simplifying various tasks"
   p.url = "http://opensource.thinkrelevance.com"  
   p.rdoc_pattern = /^(lib|bin|ext)|txt|rdoc$/
-  p.test_globs = "test/**/*_test.rb"
+  rdoc_template = `allison --path`.strip << ".rb"
+  p.rdoc_template = rdoc_template
 end
 
-# Override RDoc to use allison template, and also use our .rdoc README as the main page instead of the default README.txt
-Rake::RDocTask.new(:docs) do |rd|
-  gem "allison"
-  gem "markaby"
-  rd.main = "README.rdoc"
-  # rd.options << '-d' if RUBY_PLATFORM !~ /win32/ and `which dot` =~ /\/dot/ and not ENV['NODOT']
-  rd.rdoc_dir = 'doc'
-  files = hoe.spec.files.grep(hoe.rdoc_pattern)
-  files -= ['Manifest.txt']
-  rd.rdoc_files.push(*files)
-
-  title = "#{hoe.name}-#{hoe.version} Documentation"
-  title = "#{hoe.rubyforge_name}'s " + title if hoe.rubyforge_name != hoe.name
-end
+echoe.spec.add_development_dependency "echoe"
+echoe.spec.add_development_dependency "allison"
+echoe.spec.add_development_dependency "markaby"
 
 begin
   require 'rcov'
