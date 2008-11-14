@@ -65,10 +65,10 @@ asserting behavior related to updates, deletes, or even validating that nothing 
 
 == URLS
 
-* Log bugs, issues, and suggestions on Trac: http://opensource.thinkrelevance.com/wiki/obsidian
-* View Source: http://github.com/relevance/obsidian/tree/master
+* Log bugs, issues, and suggestions at Lighthouse: http://relevance.lighthouseapp.com/projects/19862-obsidian/overview
+* View Source: http://github.com/relevance/obsidian
 * Git clone Source: git://github.com/relevance/obsidian.git
-* RDocs: http://thinkrelevance.rubyforge.org/obsidian/
+* RDocs: http://thinkrelevance.rubyforge.org/obsidian
 
 == LICENSE
 
