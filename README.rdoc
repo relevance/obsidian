@@ -14,6 +14,17 @@ yak hair, the occasionally-occurring product of simplifying various tasks.
 
 == FEATURES
 
+=== #try
+
+Yoda was wrong; there <i>is</i> a <b>##try</b>, and it can save you from having to repeat this idiom
+all over your code.
+
+  @person ? @person.name : nil
+
+Be DRY. Just use <b>##try</b> and enjoy the same functionality:
+
+  @person.try(:name)
+
 === #not
 Tired of reading a negated conditional statement only to have to <i>reread</i> it in order to grok its
 intention?  
@@ -21,7 +32,7 @@ intention?
   !password.blank? || !password_confirmation.blank?
 
 It's not rocket surgery by any stretch, but it's still unnecessary effort for the reader.  Instead, use
-<b>##not</b> to write more readable and expressive code:
+<b>##not</b> to write more readable and expressive code.
 
   password.not.blank? || password_confirmation.not.blank?
 
