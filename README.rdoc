@@ -14,6 +14,17 @@ yak hair, the occasionally-occurring product of simplifying various tasks.
 
 == FEATURES
 
+=== #not
+Tired of reading a negated conditional statement only to have to <i>reread</i> it in order to grok its
+intention?  
+
+  !password.blank? || !password_confirmation.blank?
+
+It's not rocket surgery by any stretch, but it's still unnecessary effort for the reader.  Instead, use
+<b>##not</b> to write more readable and expressive code:
+
+  password.not.blank? || password_confirmation.not.blank?
+
 === Model Update Tracker
 This library allows you to functionally test updates to models with clearer and more focused intent.
 It forces you to have a better understanding of how your objects interact and lets you demonstrate 

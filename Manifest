@@ -10,7 +10,6 @@ lib/obsidian/spec.rb
 lib/obsidian.rb
 LICENSE
 Manifest
-Manifest.txt
 obsidian.gemspec
 Rakefile
 README.rdoc

@@ -1,3 +1,6 @@
+2008-11-14
+  * Added Object#not
+
 2008-10-30
   * Added Object#try
   * Added meta extensions from Why
